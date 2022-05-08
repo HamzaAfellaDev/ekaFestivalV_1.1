@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<div class="formobile">
+    For mobile
+</div>
+<div class="background">
+
+  
+        <img src="../../../assets/images/foundsAdded.png" alt="" hidden>
+        <img src="../../../assets/images/buying.png" alt="" hidden>
+
+    <div class="logo">
+        <img src="../../../assets/images/eka_festival.png"
+         alt=""
+         class="logo-image"
+         >
+    </div>
+
+    <div *ngIf=" loader.isLoading | async"  class="loader">
+        <!--
+        <mat-progress-spinner
+            color="accent"
+            mode="indeterminate"
+            >
+        </mat-progress-spinner>
+        -->
+        <p>Chargement ...</p>
+        <mat-progress-bar 
+            mode="indeterminate"
+            color="accent"    
+        ></mat-progress-bar>
+        
+    </div>
+    
+
+    <div class="card-info">
+        <div class="first-line">
+            <div class="card-number">
+                <span>Bonjour, </span>
+                <span class="bonjour"> {{ClientCardInformations.informations_client.nom_client}} </span>
+            </div>
+        </div>
+        <div class="second-line">
+            <div class="full-name">
+             <span>Le solde de votre compte est : </span>
+            </div>
+        </div>
+        <div class="third-line">
+                <span class="solde">{{ClientCardInformations.informations_client.solde}},00 Dhs</span>
+        </div>
+    </div>
+
+    <div class="add-founds">
+        <button (click)="addFounds()" >
+            <span class="material-symbols-outlined creditCard">
+                credit_card
+            </span>
+            Alimenter mon compte par carte</button>
+    </div>
+    
+
+    <div class="historique">
+        <table>
+            <thead>
+                <tr>
+                    <th class="transactions">Transaction</th>
+                      <th class="details">Details</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr *ngFor="let transaction of ClientCardInformations.historique" class="test">
+                    <td class="transactions">
+                        <div class="transaction-card">
+                            <div class="transaction-icon" *ngIf="transaction.montant >= 0">
+                                <img src="../../../assets/images/foundsAdded.png" alt="">
+                            </div>
+                            <div class="transaction-icon" *ngIf="transaction.montant <= 0">
+                                <img src="../../../assets/images/buying.png" alt="">
+                            </div>
+                            <div class="transaction-details">
+                                <div class="transaction-note">
+                                    {{ transaction.note }}
+                                </div>
+                                <div class="transaction-date">
+                                    {{ transaction.date }}
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </td>
+                    <td class="details"> 
+                        <div class="transaction-montant" style="color: green;" *ngIf="transaction.montant > 0">
+                            {{ transaction.montant }} <span class="currency">Dhs</span> 
+                        </div>
+                        <div class="transaction-montant" style="color: red;" *ngIf="transaction.montant <= 0"> 
+                            {{ transaction.montant }} <span class="currency">Dhs</span> 
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="powered">
+        <p>powered by</p>
+        <img style="border-radius: 0px;" src="../../../assets/images/lacaisse.ma white logo.png" alt="">
+    </div>
+
+</div>

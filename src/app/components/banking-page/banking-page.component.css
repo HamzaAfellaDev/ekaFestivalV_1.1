@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,800&family=Federant&family=Poppins:wght@300&display=swap');
+
+.background{
+    display: none;
+}
+
+
+.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 1;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+}
+
+.transactions-scroll{
+    overflow: scroll;
+}
+
+@media only screen and (max-width: 1440px) {
+    .formobile{
+        display: none;
+    }
+    
+    .background{
+        background: rgb(220,134,183);
+        background: linear-gradient(180deg, rgba(220,134,183,1) 25%, rgba(255,255,255,1) 0%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+         
+    /* LOGO */
+    .logo{
+        width: 130px;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        background: white;
+        border-radius: 0 0 75% 75%;
+    }
+    
+    .logo-image{
+        width: 90px;
+        border-radius: 0px;
+        margin-bottom: 6px;
+        margin-top: 5px;
+    }
+    
+    /* CARD INFO */
+    .card-info{
+        background-color: white;
+        color: black;
+        width: 340px;
+        height: 220px;
+        margin-top: 0px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 10px 14px 0 rgb(0 0 0 / 28%);
+}
+
+
+    }
+    
+    .card-info .first-line{
+        margin-top: 25px;
+    }
+    
+    .card-number{
+        font-size: 22px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .bonjour{
+        font-size: 26px;
+        color: rgb(220,134,183);
+        margin: 20px 0px;
+        width: 90%;
+        text-align: center;;
+    }
+    
+    .card-info .second-line{
+        display: flex;
+        justify-content: left;
+        font-size: 10px;
+        margin-left: 30px;
+    }
+
+    .third-line{
+        display: flex;
+        justify-content: center;
+        padding: 15px 0px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .solde{
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(220,134,183);
+        font-weight: bolder;
+
+    }
+
+    /* Style Table */
+    table{
+        margin-top: 10px;
+        color : black;
+        width: 100%;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 75px;
+    }
+
+    th.transactions{
+        width: 75% !important;
+        color: rgb(220,134,183);
+        font-size: 13px;
+    }
+
+    th.details{
+        width: 25% !important;
+        text-align: center;
+        font-size: 13px;
+    }
+
+
+    td.details{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .currency{
+        font-size: 10px;
+    }
+
+
+    img{
+        margin-top: 10px;
+        width: 45px;
+        border-radius: 50%;
+    }
+
+/* Button recharger ma carte */
+    .add-founds{
+        display: flex;
+        width: 340px;
+        justify-self: center;
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 10px;
+        position: relative;
+        background-color:  rgb(220,134,183);
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        font-size: 14px;
+        color: #FFFFFF;
+        padding: 10px 5px;
+        text-align: center;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 10px;
+        padding-left: 25px;
+      }
+      
+      button:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      
+      button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+    
+
+/* Style transaction */
+    .historique{
+        width: 90%;
+        margin-top: 6px;
+    }
+
+    div.transaction-card{
+        display: flex;
+    }
+
+    div.transaction-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+    div.transaction-icon{
+        padding-right: 10%;
+        width: 45px;
+        height: 55px;
+    }
+
+    div.transaction-note{
+        font-size: 14px;
+    }
+
+    div.transaction-date{
+        font-size: 11px;
+    }
+
+
+    /* */
+
+    .powered{
+        position: fixed;
+        bottom: 0px;
+        background-color:rgb(220,134,183);
+        width: 100vw;
+        border-radius: 100% 100% 0% 0%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+
+    }
+
+    .powered p {
+        margin-top: 10px;
+    }
+
+    .powered img{
+        border-radius: 0px;
+        margin: -15px;
+        width: 150px;
+    }
+
+  .creditCard{
+        position: absolute;
+        margin-left: -25px;
+        margin-top: -2px;
+  }
+    
+@media only screen and (max-width: 360px) {
+    .formobile{
+        display: none;
+    }
+    .card-info{
+        width: 290px;
+    }
+
+    .card-number{
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .bonjour{
+        font-size: 22px;
+        color: rgb(220,134,183);
+        margin: 14px 0px;
+        width: 90%;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .card-info .second-line{
+        display: flex;
+        justify-content: left;
+        font-size: 10px;
+        margin-left: 30px;
+    }
+
+    .add-founds{
+        display: flex;
+        width: 290px;
+        justify-self: center;
+        flex-direction: column;
+    }
+
+    .third-line{
+        display: flex;
+        justify-content: center;
+        padding: 15px 0px;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .solde{
+        font-size: 34px;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(220,134,183);
+        font-weight: bolder;
+
+    }
+}
+    
+  
+

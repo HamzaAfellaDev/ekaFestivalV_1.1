@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target": "https://api-legacy.lacaisse.ma/getSoldeEkaFestival.php",
+        "secure":false,
+        "logLevel":"debug"
+    }
+}

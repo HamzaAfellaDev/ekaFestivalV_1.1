@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,800&family=Federant&family=Poppins:wght@300&display=swap');
+
+
+.add-founds{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.first-line{
+    display: flex;
+    font-size: 17px;
+    line-height: 1.3em;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+.second-line{
+    display: flex;
+}
+
+.third-line{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.mat-form-field{
+    width: 100%;
+    height: 100px;
+}
+
+.mat-divider{
+    margin-bottom: 15px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: black !important;
+}
+
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+    background-color: rgb(220,134,183);
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+}
+
+/* input */
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 9px 20px 0 0;
+    padding: 0.75em 0.75em 0 0.75em;
+    height: 100px;
+    background-color: red;
+}
+
+mat-form-field.mat-form-field {
+    font-size: 19px;
+  }
+
+
+  @media only screen and (max-width: 360px) {
+
+    .first-line{
+        display: flex;
+        font-size: 15px;
+        line-height: 1.3em;
+        text-align: justify;
+        margin-bottom: 14px;
+    }
+
+    mat-form-field.mat-form-field {
+        font-size: 17px;
+      }
+
+    .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+        background-color: rgb(220,134,183);
+        font-family: 'Poppins', sans-serif;
+        width: 90px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+        width: 90px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .add-founds{
+        margin-top: 4px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+
+    .first-line{
+        margin-bottom: 20px;
+    }
+    
+    .loader{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 1;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 20px;
+    }
+    
+
+  }
